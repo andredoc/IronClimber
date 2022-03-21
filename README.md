@@ -38,24 +38,24 @@ A. Documet
 
 HOME PAGE
 
-![Alt text](/images/screen_home_page.png)
+![Alt text](/public/images/screen_home_page.png)
 
 LOGIN
 
-![Alt text](/images/screen_login.png)
+![Alt text](/public/images/screen_login.png)
 
 PLACE LIST
 
-![Alt text](/images/screen_place_list.png)
+![Alt text](/public/images/screen_place_list.png)
 
 PLACE DETAILS
 
-![Alt text](/images/screen_place_details.png)
+![Alt text](/public/images/screen_place_details.png)
 
 CREATE PLACE
 
-![Alt text](/images/screen_create_place.png)
+![Alt text](/public/images/screen_create_place.png)
 
 PROFILE USER
 
-![Alt text](/images/screen_profile_user.png)
+![Alt text](/public/images/screen_profile_user.png)

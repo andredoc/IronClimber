@@ -1,45 +1,61 @@
-## IronClimber APP - MARKDOWN
+# IronClimber APP - MARKDOWN
 
-|METHOD | URL  | DESCRIPTION | PROTECTED|
+This project has been designed, code and thought by a team of two, Andre Documet and Jorge Garzón, during a 7 day week assignment on an Iron Hack Bootcamp context.
 
-| GET | /auth/signup | renderiza formulario de registro | None |
+The aim of this project was to challenge us to create a Web App to show the most important places to climb in Spain using ExpressJS, Handlebars, MongoDB, GoogleMaps API and Google Places Library. 
 
-| POST | /auth/signup | envia formulario de registro | None |
+A. Documet
 
-| GET | /auth/login | renderiza formulario de ingreso | None |
+## Build & development 
 
-| POST | /auth/login | envia formulario de ingreso | None |
+- From the terminal, in the project folder, type `npm install`
+- After npm finished, from the terminal, in the project folder, type `npm start`
 
-| POST | /auth/logout | cierra sesion del usuario | None (USUARIO con mismo Id  ADMIN) |
+| Method | Url | Description | Protected |
+| ----------- | ----------- | ----------- | ----------- |
+| GET | /auth/signup | renderiza formulario de registro |  |
+| POST | /auth/signup | envia formulario de registro |  |
+| GET | /auth/login | renderiza formulario de ingreso |  |
+| POST | /auth/login | envia formulario de ingreso |  |
+| POST | /auth/logout | cierra sesion: usuario con mismo id y ADMIN |  	|
+| GET | /places | muestra los lugares que están cerca: usuario logueado  |  |      
+| GET | /places/create | renderiza formulario de creación de lugar: admin y Experto | ✅  | 
+| POST | /places/create | permite crear un lugar: admin y Experto | ✅   |
+| GET | /places/:id | muestra detalle del lugar seleccionado: usuario logueado |   |
+| GET | /places/:id/edit | modificar detalles del lugar seleccionado: admin y Experto | 	✅ |
+| POST | /places/:id/edit | modificar detalles del lugar seleccionado: admin y Experto | 	✅ |
+| POST | /places/:id/delete | permite eliminar un lugar: admin y Experto | 	✅  |
+| POST | /reviews/new-comment/:id | permite añadir comentarios del lugar seleccionado: usuario logueado |   |
+| POST | /reviews/:id/delete | borra comentarios del lugar seleccionado: usuario con mismo id, admin y Experto | ✅   |
+| GET | /user/search | permite ubicar a un usuario: usuario logueado |  |
+| POST | /user/search | permite ubicar a usuario por email: usuario logueado |  |
+| GET | /user/:id/details | permite ver los detalles de un usuario: usuario logueado |  |
+| GET | /user/:id/edit | permite modificar los detalles de un usuario: Usuario mismo id | 	✅ |
+| POST | /user/:id/edit | permite modificar los detalles de un usuario: Usuario mismo id, admin | 	✅ |
+| POST | /user/:id/delete | permite eliminar un usuario: Usuario con mismo id & admin | ✅ |
 
-| POST | /users/:id/delete | permite eliminar un usuario | User(id) & ADMIN |
+## Web app ScreenShots
 
-| GET | /places/around | muestra los lugares que están cerca | None * |       
+HOME PAGE
 
-| GET | /places/create | renderiza formulario de creación de lugar | None  None * (EXPERT)  |
+![Alt text](/images/screen_home_page.png)
 
-| POST | /places/create | permite crear un lugar | None * (EXPERT) |
+LOGIN
 
-| GET | /places/:id/details | muestra detalle del lugar seleccionado | None  |
+![Alt text](/images/screen_login.png)
 
-| GET | /places/:id/reviews | permite añadir comentarios del lugar seleccionado | None  |
+PLACE LIST
 
-| GET | /places/:id/update | modificar detalles del lugar seleccionado | Expert & ADMIN |
+![Alt text](/images/screen_place_list.png)
 
-| POST | /places/:id/update | modificar detalles del lugar seleccionado | Expert & ADMIN |
+PLACE DETAILS
 
-| POST | /places/delete | permite eliminar un lugar | YES: ADMIN  |
+![Alt text](/images/screen_place_details.png)
 
-| GET | /users/:id/details | permite ver los detalles de un usuario | None |
+CREATE PLACE
 
-| GET | /users/:id/update | permite modificar los detalles de un usuario | User(id) |
+![Alt text](/images/screen_create_place.png)
 
-| POST | /users/:id/update | permite modificar los detalles de un usuario | User(id) |
+PROFILE USER
 
----------------------------------------------------------------------------------------------------
-
-
-
-
-
-
+![Alt text](/images/screen_profile_user.png)

@@ -4,6 +4,8 @@ This project has been designed, code and thought by a team of two, Andre Documet
 
 The aim of this project was to challenge us to create a Web App to show the most important places to climb in Spain using ExpressJS, Handlebars, MongoDB, GoogleMaps API and Google Places Library. 
 
+Note: Deployed to Heroku https://irondiver.herokuapp.com/
+
 A. Documet
 
 ## Build & development 

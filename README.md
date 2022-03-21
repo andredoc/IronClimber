@@ -1,4 +1,4 @@
-# IronClimber APP - MARKDOWN
+# IronClimber APP 
 
 This project has been designed, code and thought by a team of two, Andre Documet and Jorge Garzón, during a 7 day week assignment on an Iron Hack Bootcamp context.
 

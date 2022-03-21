@@ -1,0 +1,67 @@
+<div class="view-description">
+    <span class="view-title"><i class="bi bi-pencil-square"></i> Editar - </span>
+    <span id="place-name" class="view-introduction"> {{name}} </span>
+</div>
+<form action="/places/{{_id}}/edit" method="POST">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="place-name-input-label">Nombre</span>
+                    <input id="place-name-input" type="text" name="name" class="form-control" placeholder="Place name"
+                        aria-label="Placename" aria-describedby="place-name-input-label" value="{{name}}">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="place-lat-input-label">Latitud</span>
+                    <input id="place-lat-input" name="lat" type="text" class="form-control" placeholder="Place latitude"
+                        aria-label="Placelatitude" aria-describedby="place-lat-input-label" value="{{location.coordinates.[0]}}">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="place-lng-input-label">Longitud</span>
+                    <input id="place-lng-input" type="text" name="lng" class="form-control" placeholder="Place longitude"
+                        aria-label="Placelongitude" aria-describedby="place-lng-input-label" value="{{location.coordinates.[1]}}">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="place-level-input-label">Nivel</span>
+                    <input id="place-level-input" type="text" name="level" class="form-control" placeholder="Place level"
+                        aria-label="Placelevel" aria-describedby="place-level-input-label" value="{{level}}">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="place-access-input-label">Acceso</span>
+                    <input id="place-access-input" type="text" name="access" class="form-control" placeholder="Place access"
+                        aria-label="Placeaccess" aria-describedby="place-access-input-label" value="{{access}}">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="place-parking-input-label">Parking</span>
+                    <input id="place-parking-input" type="text" name="parking" class="form-control" placeholder="Place parking"
+                        aria-label="Placeparking" aria-describedby="place-parking-input-label" value="{{parking}}">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="place-type-input-label">Tipo</span>
+                    <input id="place-type-input" type="text" name="type" class="form-control" placeholder="Place type"
+                        aria-label="Placetype" aria-describedby="place-type-input-label" value="{{type}}">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="place-material-input-label">Material</span>
+                    <input id="place-material-input" type="text" name="material" class="form-control" placeholder="Place material"
+                        aria-label="Placematerial" aria-describedby="place-material-input-label" value="{{material}}">
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="place-description-input-label">Descripción</span>
+                    <input id="place-description-input" type="text" name="description" class="form-control"
+                        placeholder="Place description" aria-label="Placedescription" aria-describedby="place-description-input-label"
+                        value="{{description}}">
+                </div>
+            </div>
+            <div class="col-md-12 edit-btn-container">
+                <label for="edit-btn">
+                    <input class="btn btn-success mb-3" id="edit-btn" type="submit" value="Guardar Edición">
+                </label>
+            </div>
+        </div>
+    </div>
+</form>
